@@ -1,1 +1,29 @@
 @tailwind components;
+
+@layer components {
+    .button-style {
+        @apply bg-white dark:bg-countries-500 shadow-md rounded-lg h-12 px-4 flex items-center gap-2 hover:shadow-lg hover:dark:shadow-xl cursor-pointer;
+    }
+}
+
+@layer components {
+    .loader {
+        width: 2rem;
+        height: 2rem;
+        @apply border-[5px] border-countries-900 dark:border-white border-solid border-b-transparent dark:border-b-transparent;
+        border-radius: 50%;
+        display: inline-block;
+        box-sizing: border-box;
+        animation: rotation 1s linear infinite;
+    }
+}
+
+@keyframes rotation {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}

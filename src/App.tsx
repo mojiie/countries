@@ -1,4 +1,5 @@
 import HomePage from './pages/home/home'
+import CountryPage from './pages/country/country'
 import NotFoundPage from './pages/not-found/not-found'
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 
@@ -9,6 +10,11 @@ function App() {
                 <Route
                     path='/'
                     element={<HomePage />}
+                />
+
+                <Route
+                    path='/country'
+                    element={<CountryPage />}
                 />
 
                 <Route

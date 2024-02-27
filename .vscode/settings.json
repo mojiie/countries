@@ -3,6 +3,8 @@
         "cioc",
         "demonym",
         "latlng",
+        "persistor",
+        "reduxjs",
         "shabnam"
     ]
 }
